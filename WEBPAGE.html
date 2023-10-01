@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="aymenu-container">
+        <div id="ayar-icon" class="ic">&#9881;</div>
+        <div id="ayar-menu" class="aymenu">
+            <label for="yazı-color">Metin Rengi:</label>
+            <input type="color" id="text-color" value="#000000">
+            <br>
+            <label for="text-size">Metin Boyutu:</label>
+            <input type="range" id="text-size" min="10" max="36" value="16">
+        </div>
+    </div>
+    <div class="text-den">
+        <p id="text" class="hidden">Örnek Metin</p>
+    </div>
+    
+    
+    <script src="asd.js"></script>
+    <div class="box">
+        <hr class="upper">
+        <img src="a1.jpg" class="pp" id="pp2">
+
+        <input type="text" class="asd" id="asd1" placeholder="pls input text">
+        <div id="mesajk" class="mesajku"></div>
+        <div>
+            <button class="btn" onclick="mesj()">Click</button>
+            <hr>
+            <div class="mesajku" id="asdd"></div>
+            
+</body>
+</html>
+<style>
+.box{
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin-left: 300px;
+  overflow: hidden;
+  color: rgb(95, 24, 24);
+  border: 2px solid;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: aqua;
+}
+.box a
+{
+    border: 11px solid;
+    position: relative;
+}
+.upper
+{
+    margin-top: 0px;
+    height: 100px;
+    background-color: azure;
+}
+.pp
+{
+    position: absolute;
+    width: 90px;
+    margin-top: -90px;
+border-radius: 510px;
+margin-left: 40px;
+}
+.asd{
+    margin-top: -75px;
+    margin-left: 180px;
+    width: 400px;
+    height: 30px;
+}
+.btn
+{
+    margin-top: -65px;
+    margin-left: 660px;
+    width: 70px;
+    height: 20px;
+}
+.mesajku
+{
+  width: 761px;
+  height:auto;
+  margin-left: 15px;
+  background-color: white;
+  font-size: larger;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+body
+{
+    background-color: #d1d1d1;
+}
+#tarih
+{
+    color: gray; font-size: 10px;
+}
+.gidenMesaj{border-bottom: 1px gray solid;margin-top: 10px;margin-bottom: 10px;}
+.gidenMesaj>img{width: 20px; height: 20px; margin: 5px 5px 0px 5px;}
+.aymenu-container {
+    position: fixed;
+    top: 10px; /* Sağ üst köşeye yakın bir konum */
+    right: 10px;
+    z-index: 1000; /* Diğer içeriklerin üzerinde görünmesini sağlar */
+}
+
+.ic {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.aymenu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.aymenu label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.text-den {
+    margin-top: 50px;
+}
+
+#text.hidden {
+    display: none;
+}
+
+#text {
+    color: #000000;
+    font-size: 16px;
+}
+
+
+</style>
